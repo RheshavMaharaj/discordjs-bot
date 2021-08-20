@@ -15,6 +15,10 @@ for (const file of commandFiles) {
 }
 
 client.once('ready', () => {
+	client.user.setActivity("with depression", {
+		type: "STREAMING",
+		url: "https://www.youtube.com/watch?v=He6CO2osqnU"
+	});
 	console.log('Ready!');
 });
 
@@ -31,6 +35,7 @@ client.on('interactionCreate', async interaction => {
 		console.error(error);
 		await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
 	}
+	
 });
 
 

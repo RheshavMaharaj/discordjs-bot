@@ -14,7 +14,7 @@ module.exports = {
 					.setStyle('SUCCESS'),
 			);
 
-		await interaction.reply({ content: 'Pong!', components: [row] });
+		await interaction.reply({ content: 'Eyes up, Guardian. The cabal are not to be trusted.', components: [row] });
 
 		const filter = i => i.customId === 'primary';
 
